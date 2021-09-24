@@ -7,7 +7,7 @@ provider "aws" {
 resource "aws_instance" "udacity" {
     count = 2
     ami = "ami-0323c3dd2da7fb37d"
-    instance_type = "t2.small"
+    instance_type = "t2.micro"
     
     tags = {
             Name  = "EC2-Udacity-Small-${count.index + 1}"
