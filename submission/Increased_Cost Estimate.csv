@@ -1,0 +1,17 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Part 1_ NAT Gateway,Amazon Virtual Private Cloud (VPC),0,263.25,3159,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),Part 1_CloudFront,Amazon CloudFront,0,640.07,7680.84,USD,"Data transfer out to internet (5 TB per month), Data transfer out to origin (10 TB per month), Number of requests (HTTPS) (75000 per month), Number of requests (HTTPS) ( per month), Number of requests (HTTPS) ( per month)"
+My Estimate,US East (N. Virginia),Part 1_S3,S3 Standard,0,155.76,1869.12,USD,S3 Standard storage (5 TB per month)
+My Estimate,US East (N. Virginia),Part 1_S3,Data Transfer,0,102.4,1228.8,USD,"DT Inbound: All other regions (3 TB per month), DT Inbound: Internet (2 TB per month), DT Outbound: Amazon CloudFront (10 TB per month), DT Outbound: All other regions (5 TB per month)"
+My Estimate,US East (N. Virginia),Part 1_EC2,Amazon EC2,0,434.75,5217,USD,"Operating system (Linux), Quantity (5), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t2.xlarge)"
+My Estimate,US East (N. Virginia),Part 1_RDS,Amazon RDS for MySQL,0,13427.7,161132.4,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (50 TB), Quantity (1), Instance type (db.m1.xlarge), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (10 TB)"
+My Estimate,US East (N. Virginia),Part1_LB,Application Load Balancer,0,2352.43,28229.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Part1_LB,Network Load Balancer,0,892.43,10709.16,USD,"Number of Network Load Balancers (1), Average TLS connection duration (1 seconds), Average number of new TLS connections (10000 per second)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+"Changes: To keep the cost between $18,000 and $20,000, I have changed EC2 instance from t2.large to t2.xlarge, and RDS instance from db.m1.large to db.m1.xlarge.",,,,,,,,
